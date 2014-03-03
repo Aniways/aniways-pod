@@ -8,4 +8,4 @@ Aniways framework is available through [CocoaPods](http://cocoapods.org/), to in
 Install the pod(s) by running:
 
 	pod install
-Please follow the instruction of our [Getting Started Guide](http://www.aniways.com/docs).
+Please follow the instructions of our [Getting Started Guide](http://www.aniways.com/docs).
