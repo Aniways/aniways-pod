@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Aniways"
-  s.version      = "1.8"
+  s.version      = "2.0"
   s.summary      = "Beautiful messaging monetization."
 
   s.description  = <<-DESC
