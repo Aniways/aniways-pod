@@ -13,6 +13,6 @@
  */
 @interface AWTextView : UITextView <UITextViewDelegate>
 
-@property(nonatomic) id<UITextViewDelegate> aniwaysDelegate;
+@property(nonatomic, weak, setter = setAniwaysDelegate:, getter = aniwaysDelegate) id<UITextViewDelegate> aniwaysDelegate;
 
 @end
