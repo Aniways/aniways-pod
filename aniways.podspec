@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
    s.platform     = :ios, '5.1.1'
 
-  s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :branch => "verizon-pod"}
+  s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :branch => "verizon-2.2"}
   
   s.resource = ['Resources/*.png', 'Resources/*.plist', 'Resources/*.m4a']
 
