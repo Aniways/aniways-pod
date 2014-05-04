@@ -19,5 +19,5 @@
   Icons which were selected through the button would be added to this textview.
   @see AWTextView
 */
-@property AWTextView* textview;
+@property (nonatomic, weak) AWTextView *textview;
 @end
