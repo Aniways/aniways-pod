@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Aniways"
-  s.version      = "2.0.6"
+  s.version      = "2.2"
   s.summary      = "Beautiful messaging monetization."
 
   s.description  = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.resource = ['Resources/*.png', 'Resources/*.plist', 'Resources/*.m4a']
 
-  s.frameworks = 'AdSupport', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'CoreData', 'MobileCoreServices', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'Foundation' 
+  s.frameworks = 'Accelerate', 'AdSupport', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'CoreData', 'MobileCoreServices', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'Foundation', 'Accelerate' 
   
   s.library = 'z'
 
