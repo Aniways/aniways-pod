@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
    s.platform     = :ios, '5.1.1'
 
   s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :tag => "2.2"}
-  s.source_files = 'Aniways/Headers/*.h'
+  s.source_files = 'Aniways.framework/Headers/*.h'
   s.resource = ['Resources/*.png', 'Resources/*.plist', 'Resources/*.m4a']
 
   s.frameworks = 'Accelerate', 'AdSupport', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'CoreData', 'MobileCoreServices', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'Foundation', 'Accelerate' 
