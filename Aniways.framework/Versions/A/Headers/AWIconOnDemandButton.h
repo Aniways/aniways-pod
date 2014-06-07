@@ -20,4 +20,12 @@
   @see AWTextView
 */
 @property (nonatomic, weak) AWTextView *textview;
+
+/** 
+ * A Boolean value that indicates if the button is in state of swapping keyboards.
+ * This can be useful in case you want to ignore some notifications while keyboards are being swaped.
+ * For example - when swapping keyboards the notifications of closing and opening keyboard will be invoked and might be ignored.
+ */
+@property (nonatomic, readonly) BOOL isSwappingKeyboards;
+
 @end
