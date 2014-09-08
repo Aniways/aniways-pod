@@ -22,4 +22,13 @@
 */
 +(NSString*) extractOriginText:(NSString*)aniwaysEncodedText;
 
+/**
+ *  When given contexes that are no longer valid.
+ *
+ *  The context is an optional param that can be added to the reload data notification (in case an asset was asynchronously downloaded and the text layout need to be updated).
+ *  There can be cases where the context that was given by the app is no longer valid.
+ *  For example, in case the context is refer to the index in the messages model and the model was changed by additional messages that were added to its begining.
+ */
++(void) invalidateContexes;
+
 @end
