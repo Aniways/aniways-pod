@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.vendored_frameworks = 'Aniways.framework'
-
+  s.exclude_files = "AniwaysExampleProject"
 end
