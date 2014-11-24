@@ -7,8 +7,3 @@ pod 'Aniways'
 pod 'JSQMessagesViewController', :git => 'https://github.com/Aniways/JSQMessagesViewController', :branch => 'with-aniways'
 
 end
-
-target 'AniwaysExampleProjectTests' do
-
-end
-
