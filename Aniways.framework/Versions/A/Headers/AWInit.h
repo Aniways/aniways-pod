@@ -15,9 +15,16 @@
 /**
 *  This is the designated initializer for Aniways objects.
 *
-*  @param appId      The application id that was assigned to your app.
-*  @param upgradeURL An URL where your users can download your app latest version. This will be used by users to upgrade to the latest version of your app in order to be able to see Aniways Icons inside messages.
+*  @param appId   The application id that was assigned to your app.
 */
 + (void) initAniwaysWithAppId:(NSString*)appId;
 
+/**
+ *  This is the designated initializer for Aniways objects.
+ *
+ *  @param appId  The application id that was assigned to your app.
+ *  @param userId The unique current user id - this is for maitnaing the store credits accross devices and installs. You can also set the user later times using the [AWConfiguration sharedInstance].userId
+ *
+ */
++ (void) initAniwaysWithAppId:(NSString*)appId andUserId:(NSString *)userId;
 @end

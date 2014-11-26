@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class UIColor;
+@class UIView;
 @interface AWConfiguration : NSObject
 
 +(instancetype)sharedInstance;
@@ -24,5 +25,23 @@
  *  Make sure to resume it later.
  */
 @property (nonatomic, readwrite, getter = isNetworkUseSuspended) BOOL networkUseSuspended;
+
+
+/**
+ *  The tint color to tint Aniways look and feel according to the application dominant color.
+ */
+@property (nonatomic, copy) UIColor *appTintColor;
+
+
+/**
+ *  Please set this property to maintain user credits accorss devices and sessions.
+ *  Each user that uses the app should have a unique user id.
+ */
+@property (nonatomic, readwrite, copy) NSString *userId;
+
+/**
+ *  Supply the view is which you want the contextual popup to open from. This view could be the one wrapping up your AWTextView.
+ */
+@property (nonatomic, weak) UIView *viewSpawningPopup;
 
 @end

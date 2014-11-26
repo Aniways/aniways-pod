@@ -31,4 +31,12 @@
  */
 +(void) invalidateContexes;
 
+/**
+ *  Check if message is a sticker
+ *
+ *  @param aniwaysEncodedText The encoded text message
+ *  @return YES if the message contains only an icon (without any additional text), otherwise return NO.
+ */
++(BOOL) isStickerMessage:(NSString*) aniwaysEncodedText;
+
 @end

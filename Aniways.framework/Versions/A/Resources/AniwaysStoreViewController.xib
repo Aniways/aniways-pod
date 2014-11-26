@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AniwaysStoreViewController">
+            <connections>
+                <outlet property="activityIndicatorView" destination="G4G-tS-dBb" id="bSc-vu-mvy"/>
+                <outlet property="currentlBalanceLabel" destination="9Oi-qf-lLB" id="8bR-ba-yJ7"/>
+                <outlet property="productsViewWrapper" destination="Gbp-S4-Pj2" id="EVW-pR-buo"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lLF-qw-Tgd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WN-7X-lbF" userLabel="Close Button">
+                    <rect key="frame" x="280" y="15" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="tBw-1U-xpj"/>
+                        <constraint firstAttribute="height" constant="28" id="vDb-s7-TdN"/>
+                    </constraints>
+                    <state key="normal" image="aw-store-close-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressCloseButton:" destination="-1" eventType="touchUpInside" id="imQ-lq-SQo"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmT-45-LNG">
+                    <rect key="frame" x="85" y="100" width="150" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="pBb-BQ-gsq"/>
+                        <constraint firstAttribute="height" constant="40" id="rXO-Lr-279"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbp-S4-Pj2" userLabel="Products View Wrapper">
+                    <rect key="frame" x="17" y="173" width="286" height="265"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jB-GQ-oW8" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="DDL-Ry-Z2b"/>
+                                <constraint firstAttribute="height" constant="115" id="SYL-7t-lCZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bc3-hI-kl6" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="98" y="0.0" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115" id="ZaH-BC-iuy"/>
+                                <constraint firstAttribute="width" constant="90" id="yZy-iy-rnh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdZ-ps-mfK" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="196" y="0.0" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="O3b-IC-Bf7"/>
+                                <constraint firstAttribute="height" constant="115" id="te5-jV-Qdm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRE-N0-VIX" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="0.0" y="150" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115" id="APu-jp-n0M"/>
+                                <constraint firstAttribute="width" constant="90" id="znY-f3-JBB"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PW-WE-oKj" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="98" y="150" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115" id="9wO-wR-bbs"/>
+                                <constraint firstAttribute="width" constant="90" id="KNc-JK-yUx"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY7-Ov-laQ" customClass="AniwaysStoreProductView">
+                            <rect key="frame" x="196" y="150" width="90" height="115"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="9lI-Gc-RUe"/>
+                                <constraint firstAttribute="height" constant="115" id="Ogf-kM-0EP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="360" id="1DE-1h-VZs"/>
+                        <constraint firstItem="PdZ-ps-mfK" firstAttribute="top" secondItem="Gbp-S4-Pj2" secondAttribute="top" id="3Jf-zH-QxS"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="950" constant="250" id="45m-nA-Dmv"/>
+                        <constraint firstAttribute="bottom" secondItem="ZY7-Ov-laQ" secondAttribute="bottom" id="5FN-B7-V7S"/>
+                        <constraint firstItem="2jB-GQ-oW8" firstAttribute="top" secondItem="Gbp-S4-Pj2" secondAttribute="top" id="GXl-VF-2O1"/>
+                        <constraint firstAttribute="bottom" secondItem="2PW-WE-oKj" secondAttribute="bottom" id="H8y-CL-udg"/>
+                        <constraint firstItem="Bc3-hI-kl6" firstAttribute="top" secondItem="Gbp-S4-Pj2" secondAttribute="top" id="Kfk-mY-MLO"/>
+                        <constraint firstAttribute="trailing" secondItem="ZY7-Ov-laQ" secondAttribute="trailing" id="PJS-cT-8ZL"/>
+                        <constraint firstAttribute="centerX" secondItem="2PW-WE-oKj" secondAttribute="centerX" id="RBA-iw-g4x"/>
+                        <constraint firstAttribute="bottom" secondItem="DRE-N0-VIX" secondAttribute="bottom" id="YeF-ym-oPa"/>
+                        <constraint firstItem="DRE-N0-VIX" firstAttribute="leading" secondItem="Gbp-S4-Pj2" secondAttribute="leading" id="f6K-wH-E9R"/>
+                        <constraint firstAttribute="trailing" secondItem="PdZ-ps-mfK" secondAttribute="trailing" id="hOh-HT-tCZ"/>
+                        <constraint firstAttribute="centerX" secondItem="Bc3-hI-kl6" secondAttribute="centerX" id="k1h-K7-tuQ"/>
+                        <constraint firstItem="2jB-GQ-oW8" firstAttribute="leading" secondItem="Gbp-S4-Pj2" secondAttribute="leading" id="xg5-oo-GfN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16s-m3-Mp3" userLabel="Ballance Wrapper">
+                    <rect key="frame" x="156" y="140" width="147" height="24"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aw-store-credits-label.png" translatesAutoresizingMaskIntoConstraints="NO" id="UCR-15-Qh9">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="147" id="9eH-HM-l51"/>
+                                <constraint firstAttribute="height" constant="24" id="fQa-Wx-3XR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oi-qf-lLB" userLabel="Current Ballance Label">
+                            <rect key="frame" x="99" y="5" width="40" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="147" id="Kgz-h1-69j"/>
+                        <constraint firstAttribute="height" constant="24" id="VUm-HG-fW1"/>
+                        <constraint firstItem="UCR-15-Qh9" firstAttribute="top" secondItem="16s-m3-Mp3" secondAttribute="top" id="eEb-tG-SB4"/>
+                        <constraint firstItem="UCR-15-Qh9" firstAttribute="leading" secondItem="16s-m3-Mp3" secondAttribute="leading" id="nXr-ww-tSb"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="G4G-tS-dBb">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="100" id="08u-d4-TjH"/>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" priority="250" constant="85" id="3IK-bU-Hts"/>
+                <constraint firstItem="6WN-7X-lbF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="3th-ge-7qU"/>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="top" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" priority="750" constant="100" id="7cn-Z8-QGf"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gbp-S4-Pj2" secondAttribute="trailing" constant="17" id="8Qu-aa-PgF"/>
+                <constraint firstItem="Gbp-S4-Pj2" firstAttribute="top" secondItem="16s-m3-Mp3" secondAttribute="bottom" constant="9" id="CUQ-Qd-GGs"/>
+                <constraint firstItem="Gbp-S4-Pj2" firstAttribute="top" secondItem="EmT-45-LNG" secondAttribute="bottom" priority="750" constant="33" id="EJt-M6-jqQ"/>
+                <constraint firstItem="Gbp-S4-Pj2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EmT-45-LNG" secondAttribute="bottom" constant="8" id="F2c-1M-GaL"/>
+                <constraint firstAttribute="centerX" secondItem="EmT-45-LNG" secondAttribute="centerX" priority="750" id="KzB-uh-KdP"/>
+                <constraint firstAttribute="trailing" secondItem="6WN-7X-lbF" secondAttribute="trailing" constant="12" id="Mgk-Yv-mcc"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Gbp-S4-Pj2" secondAttribute="trailing" constant="120" id="QsP-hb-5S7"/>
+                <constraint firstAttribute="bottom" secondItem="Gbp-S4-Pj2" secondAttribute="bottom" priority="750" constant="130" id="W9j-1M-R7f"/>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Wi9-v5-TZe"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gbp-S4-Pj2" secondAttribute="bottom" constant="13" id="bVG-h4-0bT"/>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="csW-f2-5CH"/>
+                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Gbp-S4-Pj2" secondAttribute="bottom" constant="130" id="eZr-gp-rOf"/>
+                <constraint firstItem="EmT-45-LNG" firstAttribute="leading" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="85" id="iAj-hm-vBh"/>
+                <constraint firstAttribute="centerX" secondItem="Gbp-S4-Pj2" secondAttribute="centerX" id="irq-Y6-HLv"/>
+                <constraint firstItem="Gbp-S4-Pj2" firstAttribute="top" relation="lessThanOrEqual" secondItem="EmT-45-LNG" secondAttribute="bottom" constant="33" id="kMh-nB-2ym"/>
+                <constraint firstAttribute="trailing" secondItem="Gbp-S4-Pj2" secondAttribute="trailing" priority="750" constant="17" id="ldW-8k-SAC"/>
+                <constraint firstItem="Gbp-S4-Pj2" firstAttribute="trailing" secondItem="16s-m3-Mp3" secondAttribute="trailing" id="wAI-Fy-uzL"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="aw-store-close-button.png" width="28" height="28"/>
+        <image name="aw-store-credits-label.png" width="146" height="23"/>
+        <image name="store_header.png" width="150" height="36"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
