@@ -102,32 +102,32 @@
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
                                         senderDisplayName:kJSQDemoAvatarDisplayNameSquires
                                                      date:[NSDate distantPast]
-                                                     text:@"Welcome to JSQMessages: A messaging UI framework for iOS."],
+                                                     text:@"Welcome to Aniways: Chat Enhancing Monetization Solutions."],
                      
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdWoz
                                         senderDisplayName:kJSQDemoAvatarDisplayNameWoz
                                                      date:[NSDate distantPast]
-                                                     text:@"It is simple, elegant, and easy to use. There are super sweet default settings, but you can customize like crazy."],
+                                                     text:@"Our SDK inserts a layer of contextual, highly engaging, monetizable content."],
                      
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-                                                     date:[NSDate distantPast]
-                                                     text:@"It even has data detectors. You can call me tonight. My cell number is 123-456-7890. My website is www.hexedbits.com."],
+//                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
+//                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
+//                                                     date:[NSDate distantPast]
+//                                                     text:@"It even has data detectors. You can call me tonight. My cell number is 123-456-7890. My website is www.hexedbits.com."],
                      
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdJobs
                                         senderDisplayName:kJSQDemoAvatarDisplayNameJobs
                                                      date:[NSDate date]
-                                                     text:@"JSQMessagesViewController is nearly an exact replica of the iOS Messages App. And perhaps, better."],
+                                                     text:@"This is just an example chat ui, it is not connected to a server!"],
                      
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdCook
                                         senderDisplayName:kJSQDemoAvatarDisplayNameCook
                                                      date:[NSDate date]
-                                                     text:@"It is unit-tested, free, open-source, and documented."],
+                                                     text:@"Let's have \u200c\u200c\u200c\u200c\u200c\u200b\u200c."],
                      
-                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-                                                     date:[NSDate date]
-                                                     text:@"Now with media messages!"],
+//                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
+//                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
+//                                                     date:[NSDate date]
+//                                                     text:@"Now with media messages!"],
                      nil];
     
     [self addPhotoMediaMessage];
