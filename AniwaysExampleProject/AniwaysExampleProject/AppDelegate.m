@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #import <Aniways/AWInit.h>
-
+#import <Aniways/AWConfiguration.h>
 @interface AppDelegate ()
 
 @end
@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [AWInit initAniwaysWithAppId:@"demoApp"];
+    [AWConfiguration sharedInstance].appTintColor = [UIColor orangeColor];
     return YES;
 }
 
