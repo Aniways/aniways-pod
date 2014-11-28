@@ -109,11 +109,6 @@
                                                      date:[NSDate distantPast]
                                                      text:@"Our SDK inserts a layer of contextual, highly engaging, monetizable content."],
                      
-//                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-//                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-//                                                     date:[NSDate distantPast]
-//                                                     text:@"It even has data detectors. You can call me tonight. My cell number is 123-456-7890. My website is www.hexedbits.com."],
-                     
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdJobs
                                         senderDisplayName:kJSQDemoAvatarDisplayNameJobs
                                                      date:[NSDate date]
@@ -124,10 +119,6 @@
                                                      date:[NSDate date]
                                                      text:@"Type in words like 'coffee', 'pizza', 'burger', 'fries', 'love', 'baby', 'cat', 'tv', 'car', 'star', etc"],
                      
-//                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
-//                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
-//                                                     date:[NSDate date]
-//                                                     text:@"Now with media messages!"],
                      nil];
     
 //    [self addPhotoMediaMessage];
