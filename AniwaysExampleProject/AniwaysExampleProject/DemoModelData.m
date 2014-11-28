@@ -122,7 +122,7 @@
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdCook
                                         senderDisplayName:kJSQDemoAvatarDisplayNameCook
                                                      date:[NSDate date]
-                                                     text:@"Let's have \u200c\u200c\u200c\u200c\u200c\u200b\u200c."],
+                                                     text:@"Type in words like 'coffee', 'pizza', 'burger', 'fries', 'love', 'baby', 'cat', 'tv', 'car', 'star', etc"],
                      
 //                     [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdSquires
 //                                        senderDisplayName:kJSQDemoAvatarDisplayNameSquires
@@ -130,7 +130,7 @@
 //                                                     text:@"Now with media messages!"],
                      nil];
     
-    [self addPhotoMediaMessage];
+//    [self addPhotoMediaMessage];
     
     /**
      *  Setting to load extra messages for testing/demo
