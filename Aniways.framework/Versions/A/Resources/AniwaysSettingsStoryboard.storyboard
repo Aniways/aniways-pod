@@ -17,27 +17,30 @@
                             <rect key="frame" x="0.0" y="445" width="600" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOR-mJ-7Wf">
-                                    <rect key="frame" x="8" y="-7" width="61" height="21"/>
-                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aniways_credit_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="uzB-GE-zZA">
-                                    <rect key="frame" x="72" y="-7" width="58" height="21"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETF-NL-REY" userLabel="Powered By">
+                                    <rect key="frame" x="8" y="1" width="132" height="21"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Powered by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOR-mJ-7Wf">
+                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aniways_credit_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="uzB-GE-zZA">
+                                            <rect key="frame" x="69" y="0.0" width="58" height="21"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="21" id="jRg-aI-DCy"/>
-                                        <constraint firstAttribute="width" constant="58" id="qjt-FS-FY7"/>
+                                        <constraint firstAttribute="height" constant="21" id="Am4-Xg-Ghi"/>
+                                        <constraint firstAttribute="width" constant="132" id="cjD-hP-TBu"/>
                                     </constraints>
-                                </imageView>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="uOR-mJ-7Wf" secondAttribute="bottom" constant="4" id="L17-jr-RZx"/>
-                                <constraint firstItem="uzB-GE-zZA" firstAttribute="centerY" secondItem="uOR-mJ-7Wf" secondAttribute="centerY" id="ONl-VL-UgG"/>
-                                <constraint firstItem="uzB-GE-zZA" firstAttribute="leading" secondItem="uOR-mJ-7Wf" secondAttribute="trailing" constant="3" id="UaA-CI-yfR"/>
-                                <constraint firstItem="uOR-mJ-7Wf" firstAttribute="leading" secondItem="H1e-hU-NDK" secondAttribute="leading" constant="8" id="Va7-c0-Adz"/>
-                                <constraint firstItem="uOR-mJ-7Wf" firstAttribute="bottom" secondItem="uzB-GE-zZA" secondAttribute="bottom" id="yGI-Zn-XiE"/>
+                                <constraint firstItem="ETF-NL-REY" firstAttribute="left" secondItem="H1e-hU-NDK" secondAttribute="left" constant="8" id="JYH-Gs-HvU"/>
+                                <constraint firstItem="ETF-NL-REY" firstAttribute="top" secondItem="H1e-hU-NDK" secondAttribute="top" constant="1" id="SxD-p7-nLL"/>
                             </constraints>
                         </view>
                         <sections>
@@ -69,9 +72,9 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="eSE-I4-dX2" secondAttribute="trailing" constant="8" id="CTI-s2-qZL"/>
+                                                <constraint firstAttribute="right" secondItem="eSE-I4-dX2" secondAttribute="right" constant="8" id="CTI-s2-qZL"/>
                                                 <constraint firstAttribute="centerY" secondItem="eSE-I4-dX2" secondAttribute="centerY" id="NIk-D7-wii"/>
-                                                <constraint firstItem="yJ8-ZX-Yk8" firstAttribute="leading" secondItem="F0u-HL-JXf" secondAttribute="leading" constant="15" id="lF2-fg-iIu"/>
+                                                <constraint firstItem="yJ8-ZX-Yk8" firstAttribute="left" secondItem="F0u-HL-JXf" secondAttribute="left" constant="15" id="lF2-fg-iIu"/>
                                                 <constraint firstAttribute="centerY" secondItem="yJ8-ZX-Yk8" secondAttribute="centerY" id="nwJ-U2-uF9"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -103,8 +106,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="IUd-by-bvw" secondAttribute="centerY" id="5Mi-tR-DoG"/>
-                                                <constraint firstItem="2gf-vB-n2n" firstAttribute="leading" secondItem="EVe-IB-VmN" secondAttribute="leading" constant="15" id="7lA-Rq-ffi"/>
-                                                <constraint firstAttribute="trailing" secondItem="IUd-by-bvw" secondAttribute="trailing" constant="8" id="HeO-iq-opK"/>
+                                                <constraint firstItem="2gf-vB-n2n" firstAttribute="left" secondItem="EVe-IB-VmN" secondAttribute="left" constant="15" id="7lA-Rq-ffi"/>
+                                                <constraint firstAttribute="right" secondItem="IUd-by-bvw" secondAttribute="right" constant="8" id="HeO-iq-opK"/>
                                                 <constraint firstAttribute="centerY" secondItem="2gf-vB-n2n" secondAttribute="centerY" id="S68-pn-Zx0"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -126,7 +129,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="MPX-H1-QM2" secondAttribute="centerY" id="OZm-m9-IJ0"/>
-                                                <constraint firstItem="MPX-H1-QM2" firstAttribute="leading" secondItem="lMh-xQ-qnc" secondAttribute="leading" constant="15" id="nbF-EN-kGq"/>
+                                                <constraint firstItem="MPX-H1-QM2" firstAttribute="left" secondItem="lMh-xQ-qnc" secondAttribute="left" constant="15" id="nbF-EN-kGq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -142,7 +145,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d2r-qA-Llw" id="DD2-da-Tlo">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIz-A4-7yR">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIz-A4-7yR">
                                                     <rect key="frame" x="8" y="46" width="584" height="115"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="FZm-5a-kXF"/>
@@ -235,11 +238,11 @@
                                         <constraint firstAttribute="bottom" secondItem="NxY-nW-ZDu" secondAttribute="bottom" constant="10" id="4jM-zh-8hL"/>
                                         <constraint firstItem="eIV-SU-LQr" firstAttribute="top" secondItem="jEK-MB-xTm" secondAttribute="top" constant="11" id="Ivu-HH-aGr"/>
                                         <constraint firstAttribute="bottom" secondItem="eIV-SU-LQr" secondAttribute="bottom" constant="10" id="KYd-DD-LTG"/>
-                                        <constraint firstItem="eIV-SU-LQr" firstAttribute="leading" secondItem="jEK-MB-xTm" secondAttribute="leading" constant="8" id="L0u-ci-prH"/>
+                                        <constraint firstItem="eIV-SU-LQr" firstAttribute="left" secondItem="jEK-MB-xTm" secondAttribute="left" constant="8" id="L0u-ci-prH"/>
                                         <constraint firstAttribute="centerY" secondItem="eIV-SU-LQr" secondAttribute="centerY" id="NIA-Cg-I47"/>
                                         <constraint firstAttribute="centerY" secondItem="NxY-nW-ZDu" secondAttribute="centerY" id="UXt-Bb-Vp0"/>
-                                        <constraint firstItem="NxY-nW-ZDu" firstAttribute="leading" secondItem="eIV-SU-LQr" secondAttribute="trailing" constant="8" id="VPp-3t-fZf"/>
-                                        <constraint firstAttribute="trailing" secondItem="NxY-nW-ZDu" secondAttribute="trailing" constant="8" id="Zt1-y1-fFT"/>
+                                        <constraint firstItem="NxY-nW-ZDu" firstAttribute="left" secondItem="eIV-SU-LQr" secondAttribute="right" constant="8" id="VPp-3t-fZf"/>
+                                        <constraint firstAttribute="right" secondItem="NxY-nW-ZDu" secondAttribute="right" constant="8" id="Zt1-y1-fFT"/>
                                         <constraint firstItem="NxY-nW-ZDu" firstAttribute="top" secondItem="jEK-MB-xTm" secondAttribute="top" constant="11" id="xtw-m6-LCe"/>
                                     </constraints>
                                     <variation key="default">
