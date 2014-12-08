@@ -32,11 +32,21 @@
 +(void) invalidateContexes;
 
 /**
+*  Returns a Boolean value that indicates whether a given message represents an interactive type of message.
+*
+*  @param message The message
+*
+*  @return YES if message represents an interactive message, otherwise NO.
+*/
++(BOOL) isInteractiveMessage:(NSString*)message;
+
+/**
  *  Check if message is a sticker
  *
  *  @param aniwaysEncodedText The encoded text message
  *  @return YES if the message contains only an icon (without any additional text), otherwise return NO.
  */
 +(BOOL) isStickerMessage:(NSString*) aniwaysEncodedText;
+
 
 @end

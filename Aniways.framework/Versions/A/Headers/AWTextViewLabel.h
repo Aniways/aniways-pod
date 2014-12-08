@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AWInteractiveSharePlaceProtocol.h"
 
 /**
  *  Subclass of UITextView which supports embedding Aniways images as part of the text and was ajusted to behave as
  an UILabel.
  */
 @interface AWTextViewLabel : UITextView
+
+@property(nonatomic, weak) id<AWInteractiveSharePlaceProtocol> aniwaysSharedPlaceDelegate;
 
 @end
