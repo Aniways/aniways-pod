@@ -1,7 +1,7 @@
 PODS:
-  - Aniways (2.4.1.1)
+  - Aniways (2.4.4)
   - JSQMessagesViewController (6.0.0):
-    - Aniways (~> 2)
+    - Aniways
     - JSQSystemSoundPlayer (~> 2.0.0)
   - JSQSystemSoundPlayer (2.0.0)
 
@@ -16,12 +16,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   JSQMessagesViewController:
-    :commit: e73b18ff6f661bc7140c1da6370db2adf2b0c20e
+    :commit: 382f566e63f50240222b88da0fad90249dbbf779
     :git: https://github.com/Aniways/JSQMessagesViewController
 
 SPEC CHECKSUMS:
-  Aniways: 9f0915fd658875bfb612605eab43bbf38f374c39
-  JSQMessagesViewController: d9ccef2b541f18cbbe5733565214cee87c604dcd
+  Aniways: 3e33986ff3928851b95f26cb3d134fb604da3d16
+  JSQMessagesViewController: 5a079bf8ef606c8572d8a55cef5ca70566a5d8c7
   JSQSystemSoundPlayer: c98443b1cbb3b45db09d0d3d6c2355cf78294981
 
 COCOAPODS: 0.35.0
