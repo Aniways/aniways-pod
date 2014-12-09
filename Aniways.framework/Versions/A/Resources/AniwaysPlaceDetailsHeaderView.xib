@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,7 +13,6 @@
             <subviews>
                 <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AyE-eF-kaT">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="9aS-ad-KLt" customClass="AniwaysResizingCellsCollectionViewFlowLayout">
                         <size key="itemSize" width="320" height="264"/>
@@ -29,15 +28,12 @@
                 </collectionView>
                 <view opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTj-Ob-Gqh" userLabel="View - wrapper">
                     <rect key="frame" x="0.0" y="164" width="320" height="98"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r48-6B-rIy" userLabel="View - Dark BG">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </view>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peacock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-aM-q6C">
                             <rect key="frame" x="10" y="0.0" width="290" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="29" id="Hnj-kE-o61"/>
                             </constraints>
@@ -47,7 +43,6 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKP-OO-x7M" customClass="EDStarRating">
                             <rect key="frame" x="10" y="35" width="97" height="22"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="22" id="DPd-Sl-pO7"/>
@@ -56,7 +51,6 @@
                         </view>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44 Derech Aba Hilel, Ramat Gan Israel " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH3-5j-qmx">
                             <rect key="frame" x="10" y="59" width="290" height="19"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="19" id="pOG-sN-hJQ"/>
                             </constraints>
@@ -66,7 +60,6 @@
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="542.33 km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB9-cr-gg7">
                             <rect key="frame" x="10" y="78" width="69" height="17"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="69" id="73a-oZ-UUQ"/>
                             </constraints>
@@ -76,7 +69,6 @@
                         </label>
                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="E7I-NN-CPg">
                             <rect key="frame" x="83" y="70" width="154" height="37"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -103,84 +95,100 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-9x-nkO" userLabel="View - Map and Buttons">
                     <rect key="frame" x="0.0" y="274" width="320" height="133"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-ac-faV" userLabel="Button - Phone">
-                            <rect key="frame" x="4" y="0.0" width="75" height="65"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" image="phone_button.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didTapPhoneButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="t7i-1O-5zC"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bc-au-Okh" userLabel="Button - Website">
-                            <rect key="frame" x="82" y="0.0" width="75" height="65"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" image="website_button.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didTapWebSiteButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="IbH-zM-ZI5"/>
-                            </connections>
-                        </button>
-                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-ZS-ndg">
-                            <rect key="frame" x="164" y="0.0" width="150" height="133"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <connections>
-                                <outlet property="delegate" destination="iN0-l3-epB" id="pE8-50-zck"/>
-                            </connections>
-                        </mapView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered-by-google-on-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPq-wJ-mp0">
-                            <rect key="frame" x="224" y="120" width="80" height="10"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-bP-reY" userLabel="Buttons">
+                            <rect key="frame" x="0.0" y="0.0" width="162" height="133"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-ac-faV" userLabel="Button - Phone">
+                                    <rect key="frame" x="4" y="2" width="75" height="65"/>
+                                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" image="phone_button.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapPhoneButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="t7i-1O-5zC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bc-au-Okh" userLabel="Button - Website">
+                                    <rect key="frame" x="82" y="2" width="75" height="65"/>
+                                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" image="website_button.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapWebSiteButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="IbH-zM-ZI5"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leC-ko-7D3" userLabel="Button - Phone">
+                                    <rect key="frame" x="82" y="69" width="75" height="65"/>
+                                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" image="calender_button.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didPressAddToCalender:" destination="iN0-l3-epB" eventType="touchUpInside" id="imr-PI-X1u"/>
+                                        <action selector="didTapPhoneButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="R2H-IP-kYu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRx-mA-qEE" userLabel="Button - Nav To">
+                                    <rect key="frame" x="4" y="69" width="75" height="65"/>
+                                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" image="navigation_button.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapNavigateButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="qFK-M0-85W"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="D8s-Mc-mjC"/>
-                                <constraint firstAttribute="height" constant="10" id="gbR-TQ-GAh"/>
+                                <constraint firstAttribute="width" constant="162" id="1Bf-JI-SGU"/>
                             </constraints>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leC-ko-7D3" userLabel="Button - Phone">
-                            <rect key="frame" x="82" y="68" width="75" height="65"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" image="calender_button.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didPressAddToCalender:" destination="iN0-l3-epB" eventType="touchUpInside" id="imr-PI-X1u"/>
-                                <action selector="didTapPhoneButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="R2H-IP-kYu"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRx-mA-qEE" userLabel="Button - Nav To">
-                            <rect key="frame" x="4" y="68" width="75" height="65"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" image="navigation_button.png">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didTapNavigateButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="qFK-M0-85W"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-o0-eKP" userLabel="Button - Full Map">
-                            <rect key="frame" x="170" y="0.0" width="144" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didTapMapOnce:" destination="iN0-l3-epB" eventType="touchUpInside" id="Toc-Uo-09n"/>
-                            </connections>
-                        </button>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoo-8d-ucU" userLabel="Map">
+                            <rect key="frame" x="164" y="0.0" width="150" height="133"/>
+                            <subviews>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-ZS-ndg">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="pE8-50-zck"/>
+                                    </connections>
+                                </mapView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered-by-google-on-white.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPq-wJ-mp0">
+                                    <rect key="frame" x="55" y="120" width="80" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="D8s-Mc-mjC"/>
+                                        <constraint firstAttribute="height" constant="10" id="gbR-TQ-GAh"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-o0-eKP" userLabel="Button - Full Map">
+                                    <rect key="frame" x="0.0" y="0.0" width="144" height="130"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapMapOnce:" destination="iN0-l3-epB" eventType="touchUpInside" id="Toc-Uo-09n"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kPq-wJ-mp0" secondAttribute="trailing" constant="15" id="8Y7-fK-EEQ"/>
+                                <constraint firstAttribute="bottom" secondItem="kPq-wJ-mp0" secondAttribute="bottom" constant="3" id="OpW-uu-bXf"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="kPq-wJ-mp0" secondAttribute="trailing" constant="16" id="BH1-RZ-joy"/>
-                        <constraint firstAttribute="bottom" secondItem="kPq-wJ-mp0" secondAttribute="bottom" constant="3" id="fng-pr-5Ug"/>
+                        <constraint firstAttribute="right" secondItem="Eoo-8d-ucU" secondAttribute="right" constant="6" id="0Vy-BA-nOy"/>
+                        <constraint firstItem="PVe-bP-reY" firstAttribute="top" secondItem="F4i-9x-nkO" secondAttribute="top" id="40D-pz-N02"/>
+                        <constraint firstItem="PVe-bP-reY" firstAttribute="leading" secondItem="F4i-9x-nkO" secondAttribute="leading" id="CqE-pY-2Wo"/>
+                        <constraint firstAttribute="bottom" secondItem="Eoo-8d-ucU" secondAttribute="bottom" id="I2L-7T-6c8"/>
+                        <constraint firstItem="Eoo-8d-ucU" firstAttribute="top" secondItem="F4i-9x-nkO" secondAttribute="top" id="f2b-Bj-4vQ"/>
                         <constraint firstAttribute="height" constant="133" id="oGk-Bk-XBN"/>
+                        <constraint firstItem="Eoo-8d-ucU" firstAttribute="leading" secondItem="PVe-bP-reY" secondAttribute="trailing" constant="2" id="pIP-QY-eCK"/>
+                        <constraint firstAttribute="bottom" secondItem="PVe-bP-reY" secondAttribute="bottom" id="vR3-nU-nfI"/>
                     </constraints>
                 </view>
             </subviews>
@@ -188,15 +196,16 @@
             <constraints>
                 <constraint firstItem="AyE-eF-kaT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MY9-aI-4K5"/>
                 <constraint firstItem="AyE-eF-kaT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W0Y-vE-zbG"/>
-                <constraint firstAttribute="trailing" secondItem="AyE-eF-kaT" secondAttribute="trailing" id="Yxk-Yc-Iq2"/>
-                <constraint firstItem="F4i-9x-nkO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c1R-8w-yhQ"/>
+                <constraint firstAttribute="right" secondItem="AyE-eF-kaT" secondAttribute="right" id="Yxk-Yc-Iq2"/>
+                <constraint firstItem="F4i-9x-nkO" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" id="c1R-8w-yhQ"/>
                 <constraint firstAttribute="trailing" secondItem="MTj-Ob-Gqh" secondAttribute="trailing" id="djK-zx-ePe"/>
-                <constraint firstAttribute="trailing" secondItem="F4i-9x-nkO" secondAttribute="trailing" id="n7n-jp-Feg"/>
+                <constraint firstAttribute="right" secondItem="F4i-9x-nkO" secondAttribute="right" id="n7n-jp-Feg"/>
                 <constraint firstItem="AyE-eF-kaT" firstAttribute="bottom" secondItem="MTj-Ob-Gqh" secondAttribute="bottom" id="qT9-lB-KoQ"/>
                 <constraint firstItem="MTj-Ob-Gqh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sAt-UX-TAx"/>
                 <constraint firstAttribute="bottom" secondItem="F4i-9x-nkO" secondAttribute="bottom" constant="5" id="wVu-nP-Rbp"/>
                 <constraint firstItem="F4i-9x-nkO" firstAttribute="top" secondItem="AyE-eF-kaT" secondAttribute="bottom" constant="12" id="xL0-be-pir"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="addressLabel" destination="xH3-5j-qmx" id="gPb-7q-w30"/>
@@ -220,4 +229,9 @@
         <image name="powered-by-google-on-white.png" width="104" height="16"/>
         <image name="website_button.png" width="76" height="66"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
