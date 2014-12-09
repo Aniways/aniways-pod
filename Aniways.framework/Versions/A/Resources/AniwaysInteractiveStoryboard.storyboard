@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FhW-QS-UhY">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -341,7 +340,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPz-Cz-wxP">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPz-Cz-wxP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <connections>
                                     <outlet property="delegate" destination="PqH-Sg-oi0" id="pEz-fF-rys"/>
@@ -349,6 +348,12 @@
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KPz-Cz-wxP" firstAttribute="top" secondItem="Dfy-bc-bkM" secondAttribute="top" id="Hdw-um-fHK"/>
+                            <constraint firstItem="KPz-Cz-wxP" firstAttribute="leading" secondItem="Dfy-bc-bkM" secondAttribute="leading" id="Rkt-Il-aQb"/>
+                            <constraint firstAttribute="bottom" secondItem="KPz-Cz-wxP" secondAttribute="bottom" id="jhb-58-I6D"/>
+                            <constraint firstAttribute="trailing" secondItem="KPz-Cz-wxP" secondAttribute="trailing" id="p3c-xt-9mn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C7U-0H-88Z"/>
                     <connections>
