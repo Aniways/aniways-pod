@@ -148,7 +148,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoo-8d-ucU" userLabel="Map">
                             <rect key="frame" x="164" y="0.0" width="150" height="133"/>
                             <subviews>
-                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-ZS-ndg">
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-ZS-ndg">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
                                     <connections>
                                         <outlet property="delegate" destination="iN0-l3-epB" id="pE8-50-zck"/>
@@ -161,7 +161,7 @@
                                         <constraint firstAttribute="height" constant="10" id="gbR-TQ-GAh"/>
                                     </constraints>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-o0-eKP" userLabel="Button - Full Map">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-o0-eKP" userLabel="Button - Full Map">
                                     <rect key="frame" x="0.0" y="0.0" width="144" height="130"/>
                                     <state key="normal">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,8 +173,17 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="XBQ-o0-eKP" firstAttribute="leading" secondItem="Eoo-8d-ucU" secondAttribute="leading" id="2wl-zZ-dHK"/>
                                 <constraint firstAttribute="trailing" secondItem="kPq-wJ-mp0" secondAttribute="trailing" constant="15" id="8Y7-fK-EEQ"/>
+                                <constraint firstItem="XBQ-o0-eKP" firstAttribute="top" secondItem="Eoo-8d-ucU" secondAttribute="top" id="ErM-fy-kCO"/>
+                                <constraint firstItem="XBQ-o0-eKP" firstAttribute="leading" secondItem="Eoo-8d-ucU" secondAttribute="leading" id="Hpm-a6-WVM"/>
                                 <constraint firstAttribute="bottom" secondItem="kPq-wJ-mp0" secondAttribute="bottom" constant="3" id="OpW-uu-bXf"/>
+                                <constraint firstAttribute="trailing" secondItem="XBQ-o0-eKP" secondAttribute="trailing" constant="6" id="TJp-5B-S2X"/>
+                                <constraint firstAttribute="bottom" secondItem="eSW-ZS-ndg" secondAttribute="bottom" id="WuM-Vs-K7e"/>
+                                <constraint firstItem="eSW-ZS-ndg" firstAttribute="leading" secondItem="Eoo-8d-ucU" secondAttribute="leading" id="fug-3t-DYM"/>
+                                <constraint firstAttribute="trailing" secondItem="eSW-ZS-ndg" secondAttribute="trailing" id="iaD-IH-Gdd"/>
+                                <constraint firstItem="eSW-ZS-ndg" firstAttribute="top" secondItem="Eoo-8d-ucU" secondAttribute="top" id="vsO-id-QRJ"/>
+                                <constraint firstAttribute="bottom" secondItem="XBQ-o0-eKP" secondAttribute="bottom" constant="3" id="wSA-uZ-gvv"/>
                             </constraints>
                         </view>
                     </subviews>
