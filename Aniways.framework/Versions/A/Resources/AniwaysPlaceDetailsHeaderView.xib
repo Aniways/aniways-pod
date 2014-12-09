@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
@@ -187,7 +186,7 @@
                         <constraint firstAttribute="bottom" secondItem="Eoo-8d-ucU" secondAttribute="bottom" id="I2L-7T-6c8"/>
                         <constraint firstItem="Eoo-8d-ucU" firstAttribute="top" secondItem="F4i-9x-nkO" secondAttribute="top" id="f2b-Bj-4vQ"/>
                         <constraint firstAttribute="height" constant="133" id="oGk-Bk-XBN"/>
-                        <constraint firstItem="Eoo-8d-ucU" firstAttribute="leading" secondItem="PVe-bP-reY" secondAttribute="trailing" constant="2" id="pIP-QY-eCK"/>
+                        <constraint firstItem="Eoo-8d-ucU" firstAttribute="left" secondItem="PVe-bP-reY" secondAttribute="right" constant="2" id="pIP-QY-eCK"/>
                         <constraint firstAttribute="bottom" secondItem="PVe-bP-reY" secondAttribute="bottom" id="vR3-nU-nfI"/>
                     </constraints>
                 </view>
