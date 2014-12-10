@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZtC-ic-LFm">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZtC-ic-LFm">
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
                             </activityIndicatorView>
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7c-Sa-AFH" userLabel="View - Sort Wrapper">
@@ -96,6 +96,8 @@
                             <constraint firstItem="R7c-Sa-AFH" firstAttribute="leading" secondItem="QWA-jV-nMq" secondAttribute="leading" id="E6Q-VZ-9E6"/>
                             <constraint firstAttribute="trailing" secondItem="R7c-Sa-AFH" secondAttribute="trailing" id="KTS-Qx-5W1"/>
                             <constraint firstItem="R7c-Sa-AFH" firstAttribute="top" secondItem="Ntk-CR-RRn" secondAttribute="bottom" id="XCi-Ts-SW1"/>
+                            <constraint firstAttribute="centerX" secondItem="ZtC-ic-LFm" secondAttribute="centerX" id="iq3-w0-VAb"/>
+                            <constraint firstAttribute="centerY" secondItem="ZtC-ic-LFm" secondAttribute="centerY" id="mNN-aX-ZUk"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -437,7 +439,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-el-qaI" userLabel="View - Wrapper">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
                                 <subviews>
-                                    <mapView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNL-LV-fBq">
+                                    <mapView multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNL-LV-fBq">
                                         <rect key="frame" x="0.0" y="-200" width="320" height="768"/>
                                         <connections>
                                             <outlet property="delegate" destination="4g7-tw-sUR" id="vdx-cF-DxP"/>
@@ -466,18 +468,22 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NNL-LV-fBq" secondAttribute="bottom" constant="-366" id="LzA-xD-9eB"/>
                                     <constraint firstAttribute="trailing" secondItem="zLR-xh-HOS" secondAttribute="trailing" constant="15" id="N8L-9X-BIs"/>
                                     <constraint firstItem="Nii-wl-BCi" firstAttribute="leading" secondItem="WB9-el-qaI" secondAttribute="leading" constant="15" id="NFU-09-DVO"/>
+                                    <constraint firstItem="NNL-LV-fBq" firstAttribute="leading" secondItem="WB9-el-qaI" secondAttribute="leading" id="Qlh-bA-leI"/>
                                     <constraint firstAttribute="bottom" secondItem="zLR-xh-HOS" secondAttribute="bottom" id="f01-9b-Jbe"/>
+                                    <constraint firstAttribute="trailing" secondItem="NNL-LV-fBq" secondAttribute="trailing" id="jvU-og-Bc5"/>
                                     <constraint firstAttribute="bottom" secondItem="Nii-wl-BCi" secondAttribute="bottom" id="pGt-Pz-JrK"/>
+                                    <constraint firstItem="NNL-LV-fBq" firstAttribute="top" secondItem="WB9-el-qaI" secondAttribute="top" constant="-200" id="xn5-Hg-HSm"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="qfx-Ni-xCw" firstAttribute="top" secondItem="WB9-el-qaI" secondAttribute="bottom" constant="8" id="3Ok-cA-VCX"/>
+                            <constraint firstAttribute="bottom" secondItem="WB9-el-qaI" secondAttribute="bottom" constant="8" id="1Ya-kP-a3g"/>
+                            <constraint firstItem="WB9-el-qaI" firstAttribute="top" secondItem="8iZ-um-EqP" secondAttribute="top" id="Ouc-wx-zGF"/>
                             <constraint firstItem="WB9-el-qaI" firstAttribute="leading" secondItem="8iZ-um-EqP" secondAttribute="leading" id="YGr-YJ-bjF"/>
                             <constraint firstAttribute="trailing" secondItem="WB9-el-qaI" secondAttribute="trailing" id="d9z-eC-H8I"/>
-                            <constraint firstItem="WB9-el-qaI" firstAttribute="top" secondItem="8cm-6c-qrI" secondAttribute="bottom" id="tvs-Us-uVg"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -490,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaX-5L-Xbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1248" y="-321"/>
+            <point key="canvasLocation" x="-1546" y="-348"/>
         </scene>
         <!--Aniways Places Table View Controller-->
         <scene sceneID="3jl-Lx-h9e">
@@ -508,7 +514,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czM-TR-xP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1232" y="-46"/>
+            <point key="canvasLocation" x="-1210" y="-56"/>
         </scene>
     </scenes>
     <resources>
