@@ -14,6 +14,6 @@
 @interface AWLabel : UILabel
 
 @property (nonatomic) CGFloat maxIconSize;
-@property (nonatomic, getter = isTappingOnIconRevealsPhraseEnabled) BOOL tappingOnIconRevealsPhraseEnabled;
+@property (nonatomic, getter = isTapInteractionEnabled) BOOL tapInteractionEnabled;
 
 @end

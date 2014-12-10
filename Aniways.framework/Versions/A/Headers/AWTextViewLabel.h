@@ -18,6 +18,6 @@
 @property(nonatomic, weak) id<AWInteractiveSharePlaceProtocol> aniwaysSharedPlaceDelegate;
 
 @property (nonatomic) CGFloat maxIconSize;
-@property (nonatomic, getter = isTappingOnIconRevealsPhraseEnabled) BOOL tappingOnIconRevealsPhraseEnabled;
+@property (nonatomic, getter = isTapInteractionEnabled) BOOL tapInteractionEnabled;
 
 @end
