@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :tag => "2.4.5"}
   
-  s.resource = ['Resources/*.png', 'Resources/*.plist', 'Resources/*.m4a', 'Resources/*.xib', 'Resources/*.storyboard']
+  s.resource = ['Resources/*.png','Resources/*.jpg', 'Resources/*.plist', 'Resources/*.m4a', 'Resources/*.xib', 'Resources/*.storyboard']
 
   s.frameworks = 'Accelerate', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'CoreData', 'MobileCoreServices', 'QuartzCore', 'StoreKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'Foundation', 'Security', 'ImageIO', 'MapKit' 
   
