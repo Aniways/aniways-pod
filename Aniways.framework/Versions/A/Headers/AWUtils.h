@@ -13,13 +13,19 @@
  */
 @interface AWUtils : NSObject
 
+typedef NS_ENUM(NSInteger, AWMessageType) {
+    AWMessageTypeSticker,
+    AWMessageTypeAnimatedGif,
+    AWMessageTypeRegular
+};
+
 /**
-*  Extracts the original text from aniways encoded text (text wont include icons).
-*
-*  @param aniwaysEncodedText The encoded text
-*
-*  @return The original text that was sent by the user, without Aniways additional encoding part. The returned string wont include any icons
-*/
+ *  Extracts the original text from aniways encoded text (text wont include icons).
+ *
+ *  @param aniwaysEncodedText The encoded text
+ *
+ *  @return The original text that was sent by the user, without Aniways additional encoding part. The returned string wont include any icons
+ */
 +(NSString*) extractOriginText:(NSString*)aniwaysEncodedText;
 
 /**
@@ -32,11 +38,33 @@
 +(void) invalidateContexes;
 
 /**
- *  Check if message is a sticker
+ *  Check if message is Aniways Rich media.
  *
- *  @param aniwaysEncodedText The encoded text message
- *  @return YES if the message contains only an icon (without any additional text), otherwise return NO.
+ *  @param message a string chat message.
+ *
+ *  @return NO in case of regular message.
  */
-+(BOOL) isStickerMessage:(NSString*) aniwaysEncodedText;
++(BOOL)isRichMediaMessage:(NSString*)message;
+
+/**
+ *  Check if message is Aniways Rich media. and return type
+ *
+ *  @param message a string chat message
+ *  @param messageType AWMessageType out param
+ *
+ *  @return NO in case of regular message.
+ */
++(BOOL)isRichMediaMessage:(NSString*)message messageType:(out AWMessageType *)messageType;
+
+/**
+ *  Divides the text into messages that should be sent separately.
+ *  When the text contains assets that should be sent by its own (like animated gif, place, sticker, etc) there is a need to call this method before sending
+ *
+ *  @param text message
+ *  @return NSArray of messages to send.
+ */
++(NSArray*)splitRichText:(NSString*)text;
+
++(void) animatedGifFromText:(NSString*)message withCompletion:(void (^)(NSData *animatedGifData, NSError *error))completion;
 
 @end

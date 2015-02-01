@@ -13,4 +13,7 @@
  */
 @interface AWLabel : UILabel
 
+@property (nonatomic) CGSize maxIconSize;
+@property (nonatomic, getter = isTapInteractionEnabled) BOOL tapInteractionEnabled;
+
 @end

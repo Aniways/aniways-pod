@@ -15,4 +15,6 @@
  */
 extern NSString *const AWReloadDataNotificationName;
 
+extern NSString *const AWReloadDataNotificationContextKey;
+
 @end

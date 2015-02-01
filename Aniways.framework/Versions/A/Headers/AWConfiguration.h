@@ -44,4 +44,13 @@
  */
 @property (nonatomic, weak) UIView *viewSpawningPopup;
 
+/**
+ *  Enables/Disables the Aniways logs programmatically. Value is not persistent saved.
+ */
+@property (nonatomic, readwrite, getter = isLogEnabled) BOOL logEnabled;
+
+/**
+ *  store the value of the size of the icons when displaying as part of a text message
+ */
+-(void) setWallIconSizeInText:(NSInteger)newValue;
 @end

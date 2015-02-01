@@ -14,4 +14,7 @@
  */
 @interface AWTextViewLabel : UITextView
 
+@property (nonatomic) CGSize maxIconSize;
+@property (nonatomic, getter = isTapInteractionEnabled) BOOL tapInteractionEnabled;
+
 @end
