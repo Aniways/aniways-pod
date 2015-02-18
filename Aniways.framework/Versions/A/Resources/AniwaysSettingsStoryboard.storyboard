@@ -169,7 +169,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Adjust In-Message Emoticon Size" id="dNk-gq-wzw">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selectionStyle="none" indentationWidth="10" rowHeight="162" id="d2r-qA-Llw">
+                                    <tableViewCell hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selectionStyle="none" indentationWidth="10" rowHeight="162" id="d2r-qA-Llw">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d2r-qA-Llw" id="DD2-da-Tlo">
                                             <autoresizingMask key="autoresizingMask"/>
