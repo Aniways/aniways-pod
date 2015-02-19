@@ -16,7 +16,7 @@
                 <subviews>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-a0-LKK" userLabel="Background View">
                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                        <color key="backgroundColor" white="0.84999999999999998" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.84999999999999998" alpha="0.23999999999999999" colorSpace="calibratedWhite"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-Yw-A0U" userLabel="Animated Image Wrapper View" customClass="AniwaysAnimatedImageViewWrapper">
                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
