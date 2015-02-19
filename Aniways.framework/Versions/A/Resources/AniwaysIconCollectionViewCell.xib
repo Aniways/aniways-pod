@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
@@ -11,8 +12,32 @@
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgH-Ir-Y1F" userLabel="Background View">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.84999999999999998" alpha="0.23999999999999999" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQJ-wU-7Z7" userLabel="Icons Wrapper">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <constraints>
+                <constraint firstItem="HgH-Ir-Y1F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5EV-wN-goZ"/>
+                <constraint firstItem="HgH-Ir-Y1F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9pc-Sc-4ZZ"/>
+                <constraint firstAttribute="trailing" secondItem="HgH-Ir-Y1F" secondAttribute="trailing" id="MBk-iQ-QXy"/>
+                <constraint firstAttribute="trailing" secondItem="qQJ-wU-7Z7" secondAttribute="trailing" id="XKc-wO-mbp"/>
+                <constraint firstItem="qQJ-wU-7Z7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fg1-a7-FpD"/>
+                <constraint firstItem="qQJ-wU-7Z7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g0O-7T-2dq"/>
+                <constraint firstAttribute="bottom" secondItem="qQJ-wU-7Z7" secondAttribute="bottom" id="i4H-eB-39y"/>
+                <constraint firstAttribute="bottom" secondItem="HgH-Ir-Y1F" secondAttribute="bottom" id="mT3-Wh-mJD"/>
+            </constraints>
+            <connections>
+                <outlet property="cellRoundBackgroundView" destination="HgH-Ir-Y1F" id="fCB-7N-YUj"/>
+                <outlet property="emoticonWrapperView" destination="qQJ-wU-7Z7" id="Aay-W4-xWQ"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

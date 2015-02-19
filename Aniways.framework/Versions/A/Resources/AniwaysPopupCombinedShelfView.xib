@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AniwaysPopupCombinedShelfView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zt9-uh-4oh">
+                    <rect key="frame" x="4" y="4" width="592" height="592"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="3" id="qwI-rg-FuS">
+                        <size key="itemSize" width="57" height="57"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="cfR-uf-jf5"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="azi-Ox-ZOP"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zt9-uh-4oh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Lge-n8-bZI"/>
+                <constraint firstItem="Zt9-uh-4oh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="RKG-JI-AjK"/>
+                <constraint firstAttribute="bottom" secondItem="Zt9-uh-4oh" secondAttribute="bottom" constant="4" id="VRA-M2-6KI"/>
+                <constraint firstAttribute="trailing" secondItem="Zt9-uh-4oh" secondAttribute="trailing" constant="4" id="dDv-4I-Q1v"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="Zt9-uh-4oh" id="y8y-jx-ozA"/>
+            </connections>
+        </view>
+    </objects>
+</document>
