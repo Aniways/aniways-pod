@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AniwaysPlaceView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWa-qz-G8c" userLabel="ImageViewWrapper">
+                    <rect key="frame" x="6" y="7" width="54" height="54"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jN-tO-MXF">
+                            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54" id="7Az-2Z-dKO"/>
+                                <constraint firstAttribute="height" constant="54" id="VTj-vu-Xwl"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="7jN-tO-MXF" secondAttribute="centerX" id="A8A-bk-njD"/>
+                        <constraint firstAttribute="height" constant="54" id="DgF-3f-yTt"/>
+                        <constraint firstAttribute="centerY" secondItem="7jN-tO-MXF" secondAttribute="centerY" id="GDy-dL-5d9"/>
+                        <constraint firstAttribute="width" constant="54" id="VKC-9o-9qv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Startbucks - Grand Central Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z8w-6o-Aky">
+                    <rect key="frame" x="66" y="7" width="528" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="PC2-Of-Ifb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derech Menachem Begin 132, Tel-Aviv Yafo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbg-SX-ETm">
+                    <rect key="frame" x="66" y="28" width="528" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="jsv-lS-4SG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-e3-xAn" userLabel="Place Details" customClass="AniwaysPlaceDetailsView">
+                    <rect key="frame" x="66" y="46" width="528" height="18"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-lq-TFs" userLabel="sep">
+                    <rect key="frame" x="64" y="67" width="530" height="1"/>
+                    <color key="backgroundColor" red="0.61960784310000006" green="0.64705882349999999" blue="0.67843137249999996" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9RE-P1-2MF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Ou-lq-TFs" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="4" id="9kU-eX-9Iq"/>
+                <constraint firstItem="NT8-e3-xAn" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="Atd-rm-jg3"/>
+                <constraint firstAttribute="right" secondItem="Z8w-6o-Aky" secondAttribute="right" constant="6" id="G3d-Up-SYy"/>
+                <constraint firstAttribute="bottom" secondItem="NT8-e3-xAn" secondAttribute="bottom" constant="4" id="HOV-hE-IlP"/>
+                <constraint firstAttribute="trailing" secondItem="8Ou-lq-TFs" secondAttribute="trailing" constant="6" id="PQE-Ko-GkK"/>
+                <constraint firstItem="Z8w-6o-Aky" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="YTT-PG-3gW"/>
+                <constraint firstItem="Z8w-6o-Aky" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="Yek-62-JKb"/>
+                <constraint firstItem="HWa-qz-G8c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="dJ8-hg-Lco"/>
+                <constraint firstAttribute="trailing" secondItem="nbg-SX-ETm" secondAttribute="trailing" constant="6" id="eBL-xr-PVL"/>
+                <constraint firstItem="nbg-SX-ETm" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="eNL-Hp-bHN"/>
+                <constraint firstAttribute="bottom" secondItem="8Ou-lq-TFs" secondAttribute="bottom" id="iid-Hd-NFW"/>
+                <constraint firstAttribute="trailing" secondItem="NT8-e3-xAn" secondAttribute="trailing" constant="6" id="ja0-e9-7H9"/>
+                <constraint firstAttribute="centerY" secondItem="HWa-qz-G8c" secondAttribute="centerY" id="o5L-vy-SL2"/>
+                <constraint firstItem="NT8-e3-xAn" firstAttribute="top" secondItem="nbg-SX-ETm" secondAttribute="bottom" constant="2" id="oOl-qJ-yGf"/>
+                <constraint firstItem="nbg-SX-ETm" firstAttribute="top" secondItem="Z8w-6o-Aky" secondAttribute="bottom" constant="1" id="y8Y-mP-zbe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="placeAddressLabel" destination="nbg-SX-ETm" id="NuU-pg-5lA"/>
+                <outlet property="placeDetailsView" destination="NT8-e3-xAn" id="yzb-nM-pnH"/>
+                <outlet property="placeImageView" destination="7jN-tO-MXF" id="OAm-Wp-dmt"/>
+                <outlet property="placeImageWrapperView" destination="HWa-qz-G8c" id="2Tu-Oo-47p"/>
+                <outlet property="placeNameLabel" destination="Z8w-6o-Aky" id="5u9-Ab-5Md"/>
+            </connections>
+        </view>
+    </objects>
+</document>

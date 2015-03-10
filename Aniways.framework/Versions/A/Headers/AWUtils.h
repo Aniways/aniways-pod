@@ -16,6 +16,7 @@
 typedef NS_ENUM(NSInteger, AWMessageType) {
     AWMessageTypeSticker,
     AWMessageTypeAnimatedGif,
+    AWMessageTypePlace,
     AWMessageTypeRegular
 };
 
