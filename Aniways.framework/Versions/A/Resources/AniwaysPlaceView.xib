@@ -52,17 +52,34 @@
                     <rect key="frame" x="66" y="44" width="528" height="20"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-xc-hGP" userLabel="Loading View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="94e-HI-qKb">
+                            <rect key="frame" x="290" y="24" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="94e-HI-qKb" secondAttribute="centerY" id="1Mh-ql-MzF"/>
+                        <constraint firstAttribute="centerX" secondItem="94e-HI-qKb" secondAttribute="centerX" id="fy4-Lf-qom"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="gGE-xc-hGP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="12k-bF-yTE"/>
+                <constraint firstAttribute="trailing" secondItem="gGE-xc-hGP" secondAttribute="trailing" id="45H-l2-aw1"/>
                 <constraint firstItem="NT8-e3-xAn" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="Atd-rm-jg3"/>
                 <constraint firstAttribute="right" secondItem="Z8w-6o-Aky" secondAttribute="right" constant="6" id="G3d-Up-SYy"/>
                 <constraint firstAttribute="bottom" secondItem="NT8-e3-xAn" secondAttribute="bottom" constant="4" id="HOV-hE-IlP"/>
+                <constraint firstAttribute="bottom" secondItem="gGE-xc-hGP" secondAttribute="bottom" id="RtL-f0-RN8"/>
                 <constraint firstItem="Z8w-6o-Aky" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="YTT-PG-3gW"/>
                 <constraint firstItem="Z8w-6o-Aky" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="Yek-62-JKb"/>
                 <constraint firstItem="HWa-qz-G8c" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="6" id="dJ8-hg-Lco"/>
                 <constraint firstAttribute="right" secondItem="nbg-SX-ETm" secondAttribute="right" constant="6" id="eBL-xr-PVL"/>
                 <constraint firstItem="nbg-SX-ETm" firstAttribute="left" secondItem="HWa-qz-G8c" secondAttribute="right" constant="6" id="eNL-Hp-bHN"/>
+                <constraint firstItem="gGE-xc-hGP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ezi-KI-WO3"/>
                 <constraint firstAttribute="right" secondItem="NT8-e3-xAn" secondAttribute="right" constant="6" id="ja0-e9-7H9"/>
                 <constraint firstAttribute="centerY" secondItem="HWa-qz-G8c" secondAttribute="centerY" id="o5L-vy-SL2"/>
                 <constraint firstItem="NT8-e3-xAn" firstAttribute="top" secondItem="nbg-SX-ETm" secondAttribute="bottom" id="oOl-qJ-yGf"/>
@@ -73,6 +90,7 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="loadingView" destination="gGE-xc-hGP" id="YqU-4Q-pP4"/>
                 <outlet property="placeAddressLabel" destination="nbg-SX-ETm" id="NuU-pg-5lA"/>
                 <outlet property="placeDetailsView" destination="NT8-e3-xAn" id="yzb-nM-pnH"/>
                 <outlet property="placeImageView" destination="7jN-tO-MXF" id="OAm-Wp-dmt"/>
