@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -19,7 +19,7 @@
                         <constraint firstAttribute="height" constant="16" id="It3-at-fhS"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Theaters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRq-EX-pj1">
@@ -29,7 +29,7 @@
                         <constraint firstAttribute="width" constant="86" id="0W9-KE-yYr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-8X-H5s" userLabel="RatingWrapper">
@@ -72,6 +72,7 @@
                 <outlet property="categoryLabel" destination="TRq-EX-pj1" id="Qns-0w-Kaa"/>
                 <outlet property="categoryLabelWidthConstraint" destination="0W9-KE-yYr" id="s2w-Pc-qMW"/>
                 <outlet property="distanceLabel" destination="IqV-hS-bAD" id="zDg-cA-Rqq"/>
+                <outlet property="distanceLabelRightMarginConstraint" destination="yyQ-84-E6X" id="TWQ-UD-ykI"/>
                 <outlet property="distanceLabelWidthConstraint" destination="H4h-0E-yT0" id="KRB-hi-PCv"/>
                 <outlet property="ratingWrapperView" destination="TsE-8X-H5s" id="5FG-Ie-P8S"/>
                 <outlet property="ratingsWrapperViewWidthConstraint" destination="MEj-yI-1ce" id="NO1-bq-bgS"/>
