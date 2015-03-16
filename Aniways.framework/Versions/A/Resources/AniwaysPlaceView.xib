@@ -46,7 +46,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derech Menachem Begin 132, Tel-Aviv Yafo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbg-SX-ETm">
-                            <rect key="frame" x="0.0" y="24" width="526" height="16"/>
+                            <rect key="frame" x="0.0" y="22" width="526" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="jsv-lS-4SG"/>
                             </constraints>
@@ -55,14 +55,14 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NT8-e3-xAn" userLabel="Place Details" customClass="AniwaysPlaceDetailsView">
-                            <rect key="frame" x="0.0" y="38" width="526" height="20"/>
+                            <rect key="frame" x="0.0" y="38" width="526" height="16"/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="K5r-0K-EYD"/>
-                        <constraint firstItem="nbg-SX-ETm" firstAttribute="top" secondItem="Z8w-6o-Aky" secondAttribute="bottom" constant="4" id="LTK-yR-Btr"/>
+                        <constraint firstItem="nbg-SX-ETm" firstAttribute="top" secondItem="Z8w-6o-Aky" secondAttribute="bottom" constant="2" id="LTK-yR-Btr"/>
                         <constraint firstItem="nbg-SX-ETm" firstAttribute="left" secondItem="oYa-Mf-bn8" secondAttribute="left" id="PUl-S9-axz"/>
                         <constraint firstItem="Z8w-6o-Aky" firstAttribute="top" secondItem="oYa-Mf-bn8" secondAttribute="top" id="TGv-yy-daO"/>
                         <constraint firstItem="Z8w-6o-Aky" firstAttribute="leading" secondItem="oYa-Mf-bn8" secondAttribute="leading" id="X6L-zc-knJ"/>

@@ -33,11 +33,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-8X-H5s" userLabel="RatingWrapper">
-                    <rect key="frame" x="131" y="4" width="58" height="10"/>
+                    <rect key="frame" x="131" y="4.5" width="58" height="9"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="58" id="MEj-yI-1ce"/>
-                        <constraint firstAttribute="height" constant="10" id="ULm-cT-bKc"/>
+                        <constraint firstAttribute="height" constant="9" id="ULm-cT-bKc"/>
                     </constraints>
                 </view>
             </subviews>

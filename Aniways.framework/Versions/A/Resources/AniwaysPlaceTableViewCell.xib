@@ -19,7 +19,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyD-Tr-V2R" userLabel="sep">
-                        <rect key="frame" x="67" y="66.5" width="253" height="1"/>
+                        <rect key="frame" x="0.0" y="66.5" width="320" height="1"/>
                         <color key="backgroundColor" red="0.77647058823529413" green="0.79607843137254897" blue="0.81960784313725488" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="Ow8-5y-WBA"/>
@@ -33,7 +33,7 @@
                     <constraint firstItem="eIx-1u-rCs" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" id="adO-ZE-ns9"/>
                     <constraint firstItem="eIx-1u-rCs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eGQ-jE-fMX"/>
                     <constraint firstAttribute="right" secondItem="YyD-Tr-V2R" secondAttribute="right" id="hGx-UU-d2x"/>
-                    <constraint firstItem="YyD-Tr-V2R" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="67" id="hTb-eM-dkB"/>
+                    <constraint firstItem="YyD-Tr-V2R" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" id="hTb-eM-dkB"/>
                     <constraint firstAttribute="bottom" secondItem="YyD-Tr-V2R" secondAttribute="bottom" id="w9K-lm-Xy7"/>
                 </constraints>
             </tableViewCellContentView>
