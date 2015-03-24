@@ -1,0 +1,19 @@
+{
+  "language": "english",
+  "type": "Places",
+  "version": 0.18,
+  "phrases": {
+  		"pizza": {
+  			"": {
+  				"5": ["search:-1","category:4bf58dd8d48988d1ca941735"]}},
+                                "coffee":{"":{"5": ["search:-1","category:4bf58dd8d48988d1e0931735"]}},
+                                "drink":{"":{"5": ["search:-1","category:4bf58dd8d48988d1f9941735"]}},
+                                "beer":{"":{"5": ["search:-1","category:4d4b7105d754a06376d81259"]}},
+                                "drinks":{"":{"5": ["search:-1","category:4bf58dd8d48988d1f9941735"]}},
+                                "food":{"":{"5": ["search:-1","category:4d4b7105d754a06374d81259"]}},
+                                "eat":{"":{"5": ["search:-1","category:4d4b7105d754a06374d81259"]}},
+                                "movie":{"":{"5": ["search:-1","category:4bf58dd8d48988d17f941735"]}},
+                                "cinema":{"":{"5": ["search:-1","category:4bf58dd8d48988d17f941735"]}},
+                                "skate":{"":{"5": ["search:-1","category:4bf58dd8d48988d167941735"]}}        
+  }
+}
