@@ -16,6 +16,7 @@
 typedef NS_ENUM(NSInteger, AWMessageType) {
     AWMessageTypeSticker,
     AWMessageTypeAnimatedGif,
+    AWMessageTypePlace,
     AWMessageTypeRegular
 };
 
@@ -64,7 +65,5 @@ typedef NS_ENUM(NSInteger, AWMessageType) {
  *  @return NSArray of messages to send.
  */
 +(NSArray*)splitRichText:(NSString*)text;
-
-+(void) animatedGifFromText:(NSString*)message withCompletion:(void (^)(NSData *animatedGifData, NSError *error))completion;
 
 @end

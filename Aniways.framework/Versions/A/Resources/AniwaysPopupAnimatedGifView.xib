@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AniwaysAnimatedGifViewController"/>
@@ -12,43 +11,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbO-hn-CjP" userLabel="Error Wrapper">
-                    <rect key="frame" x="196" y="22" width="208" height="22"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AniwaysCryingSmiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="cF7-wT-5GG">
-                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="22" id="Oab-9X-DvF"/>
-                                <constraint firstAttribute="width" constant="22" id="csV-vu-vtg"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry… Couldn’t load content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgA-5q-YRP">
-                            <rect key="frame" x="28" y="5" width="180" height="13"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="180" id="6jL-eX-y6Q"/>
-                                <constraint firstAttribute="height" constant="13" id="be7-NR-bwa"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <color key="textColor" red="0.61960784313725492" green="0.6470588235294118" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="centerY" secondItem="cF7-wT-5GG" secondAttribute="centerY" id="50d-4r-X2b"/>
-                        <constraint firstAttribute="height" constant="22" id="7Hg-Xt-gCh"/>
-                        <constraint firstAttribute="centerY" secondItem="VgA-5q-YRP" secondAttribute="centerY" id="UWc-gq-O8x"/>
-                        <constraint firstItem="cF7-wT-5GG" firstAttribute="leading" secondItem="jbO-hn-CjP" secondAttribute="leading" id="YAy-Zt-lpu"/>
-                        <constraint firstItem="VgA-5q-YRP" firstAttribute="top" secondItem="jbO-hn-CjP" secondAttribute="top" constant="2" id="ioN-ua-Yf0"/>
-                        <constraint firstAttribute="trailing" secondItem="VgA-5q-YRP" secondAttribute="trailing" id="lpC-Pu-ZnV"/>
-                        <constraint firstAttribute="width" constant="208" id="oV5-L6-L3y"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="ioN-ua-Yf0"/>
-                        </mask>
-                    </variation>
-                </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-cf-VfH">
                     <rect key="frame" x="3" y="4" width="594" height="592"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -68,19 +30,13 @@
             <constraints>
                 <constraint firstItem="3Bv-cf-VfH" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="3" id="AOs-kJ-pzx"/>
                 <constraint firstAttribute="bottom" secondItem="3Bv-cf-VfH" secondAttribute="bottom" constant="4" id="IQq-Uy-lLU"/>
-                <constraint firstAttribute="centerX" secondItem="jbO-hn-CjP" secondAttribute="centerX" id="MBH-sa-awm"/>
                 <constraint firstItem="3Bv-cf-VfH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="UPG-B8-BCm"/>
                 <constraint firstAttribute="right" secondItem="3Bv-cf-VfH" secondAttribute="right" constant="3" id="gvc-wZ-pq3"/>
-                <constraint firstItem="jbO-hn-CjP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="14" id="nK5-of-FYC"/>
             </constraints>
             <connections>
                 <outlet property="animatedGifCollection" destination="3Bv-cf-VfH" id="oWy-Uj-NS1"/>
-                <outlet property="errorView" destination="jbO-hn-CjP" id="SDQ-vu-Y6N"/>
             </connections>
             <point key="canvasLocation" x="309" y="186"/>
         </view>
     </objects>
-    <resources>
-        <image name="AniwaysCryingSmiley.png" width="22" height="24"/>
-    </resources>
 </document>
