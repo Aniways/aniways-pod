@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
    s.platform     = :ios, '6.0'
 
-  s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :tag => "2.5.2"}
+  s.source = { :git => 'https://github.com/aniways/aniways-pod.git', :tag => "2.5.2.1"}
   
   s.resource = ['Resources/*.png', 'Resources/*.plist', 'Resources/*.m4a', 'Resources/*.xib', 'Resources/*.storyboard', 'Resources/*.gif', 'Resources/*.json']
 
